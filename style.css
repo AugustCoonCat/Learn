@@ -4,18 +4,19 @@
     font-family: "Inter", serif;
     font-weight: 300
 }
+.body{
+    width: 100%;
+}
+.container {
+    max-width: 1140px;
 
-.head {
-    height: 1440px;
-    width: 659px;
 }
 
-.body {
-    padding: 0 150px;
-    height: 4960px;
-    width: 1440px;
-
+.page {
+    margin: 0 auto;
 }
+
+
 
 .logo {
     display: flex;
@@ -33,10 +34,13 @@
     font-size: 30px;
     font-weight: 800;
 }
-
-.header {
+.header__container{
     display: flex;
     justify-content: space-between;
+}
+.header {
+    
+   margin: 0 auto;
     padding: 20px 0 0 0;
 }
 
@@ -83,6 +87,11 @@
 
 }
 
+.presentation__container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .presentation__title {
     font-size: 58px;
     font-weight: 400;
@@ -92,9 +101,9 @@
 }
 
 .presentation {
-    display: flex;
-    justify-content: space-between;
-    margin: 60px 0 0 0;
+
+ 
+    margin-top: 60px;
 }
 
 .presentation__text {
@@ -145,30 +154,30 @@
 .blocks__color {
     margin: 50px 0 0 0;
     display: flex;
-    width: 1130px;
+    /* width: 1130px; */
     /* height: 255px; */
 
 }
 
 .block__left__yellow {
     background-color: #FAEA73;
-    width: 355px;
-    height: 255px;
+    /* width: 355px;
+    height: 255px; */
     margin: 50px 0 0 0;
 }
 
 .block__center__blue {
     background-color: #CCEFF6;
-    width: 355px;
-    height: 255px;
+    /* width: 355px;
+    height: 255px; */
     margin: 50px 0 0 30px;
 
 }
 
 .block__right__red {
     background-color: #F7CEDC;
-    width: 355px;
-    height: 255px;
+    /* width: 355px;
+    height: 255px; */
     margin: 50px 0 0 30px;
 }
 
@@ -345,8 +354,8 @@
 .about {
     display: flex;
     margin: 100px 0 0 0;
-    width: 1130px;
-    height: 238px;
+    /* width: 1130px;
+    height: 238px; */
 }
 
 .about__left {
@@ -419,8 +428,8 @@
 }
 
 .track {
-    width: 1130px;
-    height: 500px;
+    /* width: 1130px;
+    height: 500px; */
     margin: 80px 0 0 155px;
     display: flex;
     justify-content: space-around;
@@ -435,7 +444,7 @@
 
 .track__title {
     margin: 70px 0 0 0;
-    width: 403px;
+    /* width: 403px; */
     height: 101px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
@@ -444,7 +453,7 @@
 }
 
 .track__subtitle {
-    width: 481px;
+    /* width: 481px; */
     height: 68px;
     margin: 20px 0 0 0;
     font-weight: 400;
@@ -457,7 +466,7 @@
 }
 
 .track__list__1 {
-    width: 501px;
+    /* width: 501px; */
     height: 21px;
     margin: 20px 0 0 0;
     color: white;
@@ -872,6 +881,7 @@
     font-size: 15px;
     padding-left: 3px;
 }
-.rectangle__img{
+
+.rectangle__img {
     margin-top: 30px;
 }
