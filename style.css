@@ -9,11 +9,13 @@
 }
 .container {
     max-width: 1140px;
-
+    margin: 0 auto;
 }
 
+
+
 .page {
-    margin: 0 auto;
+   
 }
 
 
@@ -114,8 +116,8 @@
 }
 
 .presentation__right {
-    width: 452px;
-    height: 422px;
+    /* width: 452px;
+    height: 422px; */
 }
 
 .button__book__presentation {
