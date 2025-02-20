@@ -4,19 +4,29 @@
     font-family: "Inter", serif;
     font-weight: 300
 }
-.body{
+
+.body {
     width: 100%;
 }
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-
-
-.page {
-   
+@media (max-width: 1300px) {
+    .container {
+        max-width: 960px;
+    }
 }
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+
 
 
 
@@ -36,13 +46,15 @@
     font-size: 30px;
     font-weight: 800;
 }
-.header__container{
+
+.header__container {
     display: flex;
     justify-content: space-between;
 }
+
 .header {
-    
-   margin: 0 auto;
+
+    margin: 0 auto;
     padding: 20px 0 0 0;
 }
 
@@ -104,7 +116,7 @@
 
 .presentation {
 
- 
+
     margin-top: 60px;
 }
 
@@ -272,29 +284,6 @@
     padding: 0 0 0 10px;
 }
 
-.antiloss {
-    display: inline;
-    width: 450px;
-    height: 140px;
-}
-
-.exchange {
-    display: inline;
-    width: 450px;
-    height: 57px;
-}
-
-.encrypted {
-    display: inline;
-    width: 450px;
-    height: 57px;
-}
-
-.options {
-    display: inline;
-    width: 450px;
-    height: 57px;
-}
 
 
 
@@ -302,6 +291,13 @@
     display: grid;
     margin: 10px 0 0 30px;
     padding: 10px;
+
+    width: 450px;
+    height: 60px;
+    overflow: hidden;
+    transition: 500ms;
+
+
     grid-template-columns: 50px 1fr 50px;
     grid-template-rows: 50px 100px;
     align-items: center;
@@ -316,6 +312,14 @@
 
 }
 
+.relaxing__list-item:hover {
+    height: 200px;
+}
+
+.relaxing__list-item:hover>.relaxing__arrow__down {
+    transform: rotate(-180deg);
+}
+
 .relaxing__list-item__title {
     grid-area: title;
     font-weight: bold;
@@ -328,7 +332,7 @@
 }
 
 .relaxing__arrow__down {
-
+    transition: 500ms;
     grid-area: arrow;
     align-items: center;
 }
@@ -501,9 +505,7 @@
 }
 
 .automated {
-    width: 1130px;
     margin: 100px 0 0 0;
-    height: 220px;
 
 }
 
@@ -624,7 +626,6 @@
 .blog__background {
     margin: 100px 0 0 0;
     background-color: #F7F9FA;
-    height: 750px;
 
 }
 
@@ -651,10 +652,14 @@
 .blog__inform {
     display: flex;
     justify-content: space-between;
+
     margin: 30px 0 0 0;
     padding: 0 0 0 20px;
-
-
+}
+@media (max-width: 1200px) {
+    .blog__inform{
+        flex-direction: column;
+    }
 }
 
 .blog__inform-item__img {
