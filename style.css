@@ -25,6 +25,12 @@
         max-width: 800px;
     }
 }
+@media (max-width: 800px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
 
 
 
@@ -65,7 +71,10 @@
 .header__right {
     display: flex;
 }
-
+.presentation__right__calendar{
+    width: 452px;
+    height: 422px;
+}
 .navigation {
     margin: 0 0 0 20px;
 }
@@ -249,7 +258,15 @@
 .subtitle__red {
     padding: 10px 0 0 32px;
 }
+@media (max-width: 1200px) {
+    .relaxing__page{
+        flex-direction: column;
+    }
+}
 
+.relaxing__page{
+    width: 100%;
+}
 .relaxing__left {
     display: contents;
 
@@ -356,6 +373,11 @@
     height: 300px;
     margin: 0 0 100px 100px;
 }
+@media (max-width: 1200px) {
+    .about{
+        flex-direction: column;
+    }
+}
 
 .about {
     display: flex;
@@ -438,7 +460,7 @@
     height: 500px; */
     margin: 80px 0 0 155px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .bulb__img {
@@ -504,14 +526,20 @@
     color: white;
 }
 
+.automated__page{
+    margin-top: 100px;
+}
 .automated {
-    margin: 100px 0 0 0;
+    padding: 100px 0 0 0;
+  
+    display: contents;
 
 }
 
 .tasks {
+    margin-left: 150px;
     width: 650px;
-    height: 122px;
+    /* height: 122px; */
 }
 
 .tasks__title {
@@ -530,18 +558,18 @@
 
 .automated__block {
     display: flex;
-    margin: -50px 0 0 0;
+    margin: 20px 0  0 100px; 
     justify-content: space-around;
 }
 
 .learn {
-    margin: 20px 0 0 -20px;
+    margin: 20px 0 0 0;
     width: 235px;
     height: 218px;
 }
 
 .learn__title {
-    margin: 20px 0 0 0;
+    margin: 20px 0 30px 0;
     width: 231px;
     height: 32px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -550,7 +578,7 @@
 }
 
 .learn__subtitle {
-    margin: 10px 0 0 0;
+    margin: 10px 0 30px 0;
     font-size: 16px;
     font-weight: 400;
 }
@@ -630,7 +658,7 @@
 }
 
 .blog__inform__header {
-    padding: 50px 0 0 0;
+    padding: 50px 0 0 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -651,7 +679,7 @@
 
 .blog__inform {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     margin: 30px 0 0 0;
     padding: 0 0 0 20px;
